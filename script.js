@@ -1,4 +1,3 @@
-
 var container = document.getElementById("array");
 
 function generatearray() {
@@ -39,9 +38,9 @@ function generate_idx() {
   
 async function Heapify(n, i) {
   var blocks = document.querySelectorAll(".block");
-  var largest = i; // Initialize largest as root
-  var l = 2 * i + 1; // left = 2*i + 1
-  var r = 2 * i + 2; // right = 2*i + 2
+  var largest = i;
+  var l = 2 * i + 1;
+  var r = 2 * i + 2;
 
   if (
     l < n &&
@@ -85,7 +84,7 @@ async function HeapSort(n) {
   
   for (var i = n - 1; i > 0; i--) {
   
-    // Move current root to end
+    
     var temp1 = blocks[i].style.height;
     var temp2 = blocks[i].childNodes[0].innerText;
     blocks[i].style.height = blocks[0].style.height;
